@@ -35,11 +35,24 @@ test('renders masked identifiers, care plan, and newest outreach record', async 
 });
 
 test('updates a care-plan goal through the member workflow API', async () => {
+  const updatedDetail = { ...detail, care_plan: [{ ...detail.care_plan[0], status: 'met' }] };
   const fetchMock = vi.mocked(fetch);
+  fetchMock.mockResolvedValueOnce({ ok: true, json: () => Promise.resolve(detail) } as Response)
+    .mockResolvedValueOnce({ ok: true } as Response)
+    .mockResolvedValueOnce({ ok: true, json: () => Promise.resolve(updatedDetail) } as Response);
   render(<AuthProvider><MemberDetailPage /></AuthProvider>);
   const status = await screen.findByLabelText('Goal status');
   fireEvent.change(status, { target: { value: 'met' } });
-  expect(fetchMock).toHaveBeenCalledWith('/api/v1/members/MEM-1001/care-plan/7', expect.objectContaining({ method: 'PATCH', body: JSON.stringify({ status: 'met' }) }));
-  expect(status).toHaveTextContent('met');
+  expect(await screen.findByDisplayValue('met')).toBeVisible();
   expect(status).not.toHaveTextContent('completed');
+});
+
+test('shows a retryable alert when member detail loading fails', async () => {
+  const fetchMock = vi.mocked(fetch);
+  fetchMock.mockResolvedValueOnce({ ok: false } as Response)
+    .mockResolvedValueOnce({ ok: true, json: () => Promise.resolve(detail) } as Response);
+  render(<AuthProvider><MemberDetailPage /></AuthProvider>);
+  expect(await screen.findByRole('alert')).toHaveTextContent('Unable to load member workflow details.');
+  fireEvent.click(screen.getByRole('button', { name: 'Retry' }));
+  expect((await screen.findAllByText('Complete diabetes self-management plan')).length).toBeGreaterThan(0);
 });

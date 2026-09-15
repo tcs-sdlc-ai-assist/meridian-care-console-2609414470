@@ -68,3 +68,24 @@ async def test_mutations_reject_auditors_cross_owner_unknown_resources_and_inval
     assert denied.status_code == 403 and cross_owner.status_code == 404
     assert unknown_member.status_code == 404 and unknown_gap.status_code == 404
     assert invalid.status_code == 422 and invalid_goal.status_code == 422 and completed_goal.status_code == 422
+
+
+@pytest.mark.asyncio
+async def test_workflow_rejects_missing_invalid_and_hostile_authorization_inputs() -> None:
+    """Fail closed for malformed identity and hostile workflow text without leaking access."""
+    from app.main import app
+
+    async with app.router.lifespan_context(app):
+        async with AsyncClient(transport=ASGITransport(app=app), base_url="http://test") as client:
+            coordinator = {"Authorization": f"Bearer {await sign_in(client, 'coordinator@meridian.example.com')}"}
+            missing_token = await client.post("/api/v1/members/MEM-1001/outreach", json={"channel": "phone", "outcome": "reached", "notes": "missing token"})
+            malformed_token = await client.patch("/api/v1/members/MEM-1001/assignment", headers={"Authorization": "Bearer malformed"}, json={"coordinator_id": "COORD-001"})
+            coordinator_assignment = await client.patch("/api/v1/members/MEM-1001/assignment", headers=coordinator, json={"coordinator_id": "COORD-001"})
+            hostile = await client.post("/api/v1/members/MEM-1001/outreach", headers=coordinator, json={"channel": "phone", "outcome": "reached", "notes": "<script>alert(1)</script> OR 1=1"})
+            detail = await client.get("/api/v1/members/MEM-1001", headers=coordinator)
+    assert missing_token.status_code == 422
+    assert malformed_token.status_code == 401
+    assert coordinator_assignment.status_code == 403
+    assert hostile.status_code == 201
+    assert detail.status_code == 200
+    assert detail.json()["outreach"][0]["notes"] == "<script>alert(1)</script> OR 1=1"
