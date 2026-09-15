@@ -1973,6 +1973,15 @@
       "_origin": "ast"
     },
     {
+      "id": "backend_tests_test_member_workflows_test_supervisor_assignment_and_protected_route_authentication_matrix",
+      "label": "test_supervisor_assignment_and_protected_route_authentication_matrix()",
+      "file_type": "code",
+      "source_file": "backend/tests/test_member_workflows.py",
+      "source_location": "L95",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
       "id": "backend_tests_test_member_workflows_rationale_1",
       "label": "Verify protected member care workflows against file-backed SQLite.",
       "file_type": "rationale",
@@ -2010,6 +2019,14 @@
       "file_type": "rationale",
       "source_file": "backend/tests/test_member_workflows.py",
       "source_location": "L75",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_member_workflows_rationale_96",
+      "label": "Require valid identity for every workflow and permit assignment only to\u2026",
+      "file_type": "rationale",
+      "source_file": "backend/tests/test_member_workflows.py",
+      "source_location": "L96",
       "_origin": "ast"
     },
     {
@@ -2705,6 +2722,14 @@
       "source_location": "L1",
       "_origin": "ast",
       "community": 5
+    },
+    {
+      "id": "frontend_src_pages_loginpage_test_dashboardmock_loginmock_membersmock",
+      "label": "{ dashboardMock, loginMock, membersMock }",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/LoginPage.test.tsx",
+      "source_location": "L7",
+      "_origin": "ast"
     },
     {
       "id": "frontend_src_pages_loginpage",
@@ -6483,6 +6508,27 @@
       "_origin": "ast"
     },
     {
+      "source": "backend_tests_test_member_workflows_test_supervisor_assignment_and_protected_route_authentication_matrix",
+      "target": "backend_tests_test_member_workflows_py_asyncio",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_member_workflows.py",
+      "source_location": "L94",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_member_workflows",
+      "target": "backend_tests_test_member_workflows_test_supervisor_assignment_and_protected_route_authentication_matrix",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_member_workflows.py",
+      "source_location": "L95",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "backend_tests_test_member_workflows_test_detail_refetches_persisted_gap_closure_outreach_and_goal_status",
       "target": "backend_tests_test_member_workflows_py_asyncclient",
       "relation": "calls",
@@ -6549,6 +6595,28 @@
       "_origin": "ast"
     },
     {
+      "source": "backend_tests_test_member_workflows_test_supervisor_assignment_and_protected_route_authentication_matrix",
+      "target": "backend_tests_test_member_workflows_py_asyncclient",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_member_workflows.py",
+      "source_location": "L100",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_member_workflows_test_supervisor_assignment_and_protected_route_authentication_matrix",
+      "target": "backend_tests_test_member_workflows_sign_in",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_member_workflows.py",
+      "source_location": "L101",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "backend_tests_test_member_workflows_rationale_1",
       "target": "backend_tests_test_member_workflows",
       "relation": "rationale_for",
@@ -6595,6 +6663,16 @@
       "confidence": "EXTRACTED",
       "source_file": "backend/tests/test_member_workflows.py",
       "source_location": "L75",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_member_workflows_rationale_96",
+      "target": "backend_tests_test_member_workflows_test_supervisor_assignment_and_protected_route_authentication_matrix",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_member_workflows.py",
+      "source_location": "L96",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -7533,12 +7611,33 @@
     },
     {
       "source": "frontend_src_pages_loginpage_test",
-      "target": "frontend_src_pages_loginpage",
+      "target": "frontend_src_app",
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/pages/LoginPage.test.tsx",
       "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_pages_loginpage_test",
+      "target": "frontend_src_pages_loginpage",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/LoginPage.test.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_pages_loginpage_test",
+      "target": "frontend_src_pages_loginpage_test_dashboardmock_loginmock_membersmock",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/LoginPage.test.tsx",
+      "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -8258,12 +8357,23 @@
     },
     {
       "source": "frontend_src_pages_loginpage_test",
-      "target": "frontend_src_pages_loginpage_loginpage",
+      "target": "frontend_src_app_app",
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/pages/LoginPage.test.tsx",
       "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_pages_loginpage_test",
+      "target": "frontend_src_pages_loginpage_loginpage",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/LoginPage.test.tsx",
+      "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -9382,6 +9492,19 @@
     },
     {
       "source": "backend_app_core_database_get_session",
+      "target": "backend_app_routers_member_workflows_assign",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L68",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_core_database_get_session",
+      "_tgt": "backend_app_routers_member_workflows_assign"
+    },
+    {
+      "source": "backend_app_core_database_get_session",
       "target": "backend_app_routers_member_workflows_close",
       "relation": "references",
       "context": "generic_arg",
@@ -9421,6 +9544,19 @@
     },
     {
       "source": "backend_app_core_database_get_session",
+      "target": "backend_app_routers_member_workflows_update_goal",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L57",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_core_database_get_session",
+      "_tgt": "backend_app_routers_member_workflows_update_goal"
+    },
+    {
+      "source": "backend_app_core_database_get_session",
       "target": "backend_app_routers_members_get_members",
       "relation": "references",
       "context": "generic_arg",
@@ -9431,32 +9567,6 @@
       "_origin": "ast",
       "_src": "backend_app_core_database_get_session",
       "_tgt": "backend_app_routers_members_get_members"
-    },
-    {
-      "source": "backend_app_core_database_get_session",
-      "target": "backend_app_routers_member_workflows_assign",
-      "relation": "references",
-      "context": "generic_arg",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/routers/member_workflows.py",
-      "source_location": "L68",
-      "weight": 1.0,
-      "_origin": "ast",
-      "_src": "backend_app_routers_member_workflows_assign",
-      "_tgt": "backend_app_core_database_get_session"
-    },
-    {
-      "source": "backend_app_core_database_get_session",
-      "target": "backend_app_routers_member_workflows_update_goal",
-      "relation": "references",
-      "context": "generic_arg",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/routers/member_workflows.py",
-      "source_location": "L57",
-      "weight": 1.0,
-      "_origin": "ast",
-      "_src": "backend_app_routers_member_workflows_update_goal",
-      "_tgt": "backend_app_core_database_get_session"
     },
     {
       "source": "backend_app_main_py_get",
@@ -9481,8 +9591,8 @@
       "source_location": "L30",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_app_services_member_workflow_service_mutable_member",
-      "_tgt": "backend_app_models_entities_member"
+      "_src": "backend_app_models_entities_member",
+      "_tgt": "backend_app_services_member_workflow_service_mutable_member"
     },
     {
       "source": "backend_app_models_entities_member",
@@ -9494,8 +9604,8 @@
       "source_location": "L22",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_app_services_member_workflow_service_permitted_member",
-      "_tgt": "backend_app_models_entities_member"
+      "_src": "backend_app_models_entities_member",
+      "_tgt": "backend_app_services_member_workflow_service_permitted_member"
     },
     {
       "source": "backend_app_routers_auth_py_post",
@@ -9538,6 +9648,19 @@
     },
     {
       "source": "backend_app_routers_member_workflows_actor",
+      "target": "backend_app_routers_member_workflows_assign",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L68",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_routers_member_workflows_actor",
+      "_tgt": "backend_app_routers_member_workflows_assign"
+    },
+    {
+      "source": "backend_app_routers_member_workflows_actor",
       "target": "backend_app_routers_member_workflows_close",
       "relation": "references",
       "context": "generic_arg",
@@ -9577,19 +9700,6 @@
     },
     {
       "source": "backend_app_routers_member_workflows_actor",
-      "target": "backend_app_routers_member_workflows_assign",
-      "relation": "references",
-      "context": "generic_arg",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/app/routers/member_workflows.py",
-      "source_location": "L68",
-      "weight": 1.0,
-      "_origin": "ast",
-      "_src": "backend_app_routers_member_workflows_assign",
-      "_tgt": "backend_app_routers_member_workflows_actor"
-    },
-    {
-      "source": "backend_app_routers_member_workflows_actor",
       "target": "backend_app_routers_member_workflows_update_goal",
       "relation": "references",
       "context": "generic_arg",
@@ -9598,8 +9708,8 @@
       "source_location": "L57",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_app_routers_member_workflows_update_goal",
-      "_tgt": "backend_app_routers_member_workflows_actor"
+      "_src": "backend_app_routers_member_workflows_actor",
+      "_tgt": "backend_app_routers_member_workflows_update_goal"
     },
     {
       "source": "backend_app_routers_member_workflows_py_get",
@@ -9663,8 +9773,8 @@
       "source_location": "L57",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_app_routers_member_workflows_update_goal",
-      "_tgt": "backend_app_routers_member_workflows_py_depends"
+      "_src": "backend_app_routers_member_workflows_py_depends",
+      "_tgt": "backend_app_routers_member_workflows_update_goal"
     },
     {
       "source": "backend_app_routers_member_workflows_py_asyncsession",
@@ -9715,8 +9825,8 @@
       "source_location": "L57",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_app_routers_member_workflows_update_goal",
-      "_tgt": "backend_app_routers_member_workflows_py_asyncsession"
+      "_src": "backend_app_routers_member_workflows_py_asyncsession",
+      "_tgt": "backend_app_routers_member_workflows_update_goal"
     },
     {
       "source": "backend_app_routers_member_workflows_py_post",
@@ -9898,8 +10008,8 @@
       "source_location": "L87",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_app_services_member_workflow_service_update_goal_status",
-      "_tgt": "backend_app_services_member_workflow_service_py_asyncsession"
+      "_src": "backend_app_services_member_workflow_service_py_asyncsession",
+      "_tgt": "backend_app_services_member_workflow_service_update_goal_status"
     },
     {
       "source": "backend_tests_test_auth_py_asyncio",
@@ -9976,8 +10086,8 @@
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
-      "_src": "backend_tests_test_integration_test_login_dashboard_member_detail_closure_and_supervisor_assignment_chain",
-      "_tgt": "backend_tests_test_integration_py_asyncio"
+      "_src": "backend_tests_test_integration_py_asyncio",
+      "_tgt": "backend_tests_test_integration_test_login_dashboard_member_detail_closure_and_supervisor_assignment_chain"
     },
     {
       "source": "backend_tests_test_member_workflows_py_asyncio",
@@ -9989,8 +10099,8 @@
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
-      "_src": "backend_tests_test_member_workflows_test_detail_refetches_persisted_gap_closure_outreach_and_goal_status",
-      "_tgt": "backend_tests_test_member_workflows_py_asyncio"
+      "_src": "backend_tests_test_member_workflows_py_asyncio",
+      "_tgt": "backend_tests_test_member_workflows_test_detail_refetches_persisted_gap_closure_outreach_and_goal_status"
     },
     {
       "source": "backend_tests_test_member_workflows_py_asyncio",
@@ -10002,12 +10112,38 @@
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
-      "_src": "backend_tests_test_member_workflows_test_mutations_reject_auditors_cross_owner_unknown_resources_and_invalid_vocabulary",
+      "_src": "backend_tests_test_member_workflows_py_asyncio",
+      "_tgt": "backend_tests_test_member_workflows_test_mutations_reject_auditors_cross_owner_unknown_resources_and_invalid_vocabulary"
+    },
+    {
+      "source": "backend_tests_test_member_workflows_py_asyncio",
+      "target": "backend_tests_test_member_workflows_test_workflow_rejects_missing_invalid_and_hostile_authorization_inputs",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_member_workflows.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_tests_test_member_workflows_py_asyncio",
+      "_tgt": "backend_tests_test_member_workflows_test_workflow_rejects_missing_invalid_and_hostile_authorization_inputs"
+    },
+    {
+      "source": "backend_tests_test_member_workflows_py_asyncio",
+      "target": "backend_tests_test_member_workflows_test_supervisor_assignment_and_protected_route_authentication_matrix",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_member_workflows.py",
+      "source_location": "L94",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_tests_test_member_workflows_test_supervisor_assignment_and_protected_route_authentication_matrix",
       "_tgt": "backend_tests_test_member_workflows_py_asyncio"
     }
   ],
   "metadata": {
-    "built_at": "2026-09-15T10:38:15.876108+00:00",
+    "built_at": "2026-09-15T10:50:01.317121+00:00",
     "version": "graph_update-v1",
     "codebase_root": "C:\\artifacts-v2\\T0132PcJVCRTV000415092609414470\\developer",
     "force": true,
