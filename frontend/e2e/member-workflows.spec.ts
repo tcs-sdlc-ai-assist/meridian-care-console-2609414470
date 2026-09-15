@@ -31,3 +31,16 @@ test('uses the tablet layout and saves outreach through the live backend', async
   await page.screenshot({ path: testInfo.outputPath('member-workflow-tablet.png'), fullPage: true });
   expect(browserErrors).toEqual([]);
 });
+
+test('auditor sees member detail but no mutation controls', async ({ page }) => {
+  const browserErrors = captureBrowserErrors(page);
+  await page.goto('/');
+  await page.getByLabel('Email').fill('auditor@meridian.example.com');
+  await page.getByLabel('Password').fill('DemoPass123!');
+  await page.getByRole('button', { name: 'Sign in' }).click();
+  await expect(page.getByRole('heading', { name: 'Rosa Diaz' })).toBeVisible();
+  await expect(page.getByText(/SSN \*\*\*-\*\*-6789/)).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Log outreach' })).toHaveCount(0);
+  await expect(page.getByRole('button', { name: 'Close' })).toHaveCount(0);
+  expect(browserErrors).toEqual([]);
+});

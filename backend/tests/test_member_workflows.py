@@ -89,3 +89,21 @@ async def test_workflow_rejects_missing_invalid_and_hostile_authorization_inputs
     assert hostile.status_code == 201
     assert detail.status_code == 200
     assert detail.json()["outreach"][0]["notes"] == "<script>alert(1)</script> OR 1=1"
+
+
+@pytest.mark.asyncio
+async def test_supervisor_assignment_and_protected_route_authentication_matrix() -> None:
+    """Require valid identity for every workflow and permit assignment only to supervisors."""
+    from app.main import app
+
+    async with app.router.lifespan_context(app):
+        async with AsyncClient(transport=ASGITransport(app=app), base_url="http://test") as client:
+            supervisor = {"Authorization": f"Bearer {await sign_in(client, 'supervisor@meridian.example.com')}"}
+            missing_detail = await client.get("/api/v1/members/MEM-1001")
+            malformed_detail = await client.get("/api/v1/members/MEM-1001", headers={"Authorization": "Bearer malformed"})
+            missing_close = await client.post("/api/v1/members/MEM-1001/gaps/GAP-1001/close", json={"reason": "Missing identity"})
+            assigned = await client.patch("/api/v1/members/MEM-1001/assignment", headers=supervisor, json={"coordinator_id": "COORD-001"})
+        assert missing_detail.status_code == 422
+        assert malformed_detail.status_code == 401
+        assert missing_close.status_code == 422
+        assert assigned.status_code == 204

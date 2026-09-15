@@ -30,3 +30,12 @@ test('shows the real API error for invalid credentials and signs in with the see
   await page.screenshot({ path: testInfo.outputPath('authenticated-access.png'), fullPage: true });
   expect(browserErrors).toEqual([]);
 });
+
+test('keeps protected operational content hidden before authentication', async ({ page }) => {
+  const browserErrors = captureBrowserErrors(page);
+  await page.goto('/');
+  await expect(page.getByRole('heading', { name: 'Staff console' })).toBeVisible();
+  await expect(page.getByText('Care management overview')).toHaveCount(0);
+  await expect(page.getByText('Member panel')).toHaveCount(0);
+  expect(browserErrors).toEqual([]);
+});
