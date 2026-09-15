@@ -369,7 +369,7 @@
       "label": "lifespan()",
       "file_type": "code",
       "source_file": "backend/app/main.py",
-      "source_location": "L17",
+      "source_location": "L18",
       "_callable": true,
       "_origin": "ast",
       "community": 0
@@ -396,7 +396,7 @@
       "label": "health()",
       "file_type": "code",
       "source_file": "backend/app/main.py",
-      "source_location": "L38",
+      "source_location": "L40",
       "_callable": true,
       "_origin": "ast",
       "community": 0
@@ -411,19 +411,19 @@
       "community": 0
     },
     {
-      "id": "backend_app_main_rationale_18",
+      "id": "backend_app_main_rationale_19",
       "label": "Initialize the SQLite schema and optional demo data. Yields: Control to the\u2026",
       "file_type": "rationale",
       "source_file": "backend/app/main.py",
-      "source_location": "L18",
+      "source_location": "L19",
       "_origin": "ast"
     },
     {
-      "id": "backend_app_main_rationale_39",
+      "id": "backend_app_main_rationale_41",
       "label": "Report that the FastAPI process is available. Returns: A small dependency-free\u2026",
       "file_type": "rationale",
       "source_file": "backend/app/main.py",
-      "source_location": "L39",
+      "source_location": "L41",
       "_origin": "ast"
     },
     {
@@ -610,13 +610,12 @@
       "community": 0
     },
     {
-      "id": "post",
+      "id": "backend_app_routers_auth_py_post",
       "label": "post",
       "file_type": "code",
       "source_file": "",
       "source_location": "",
-      "_origin": "ast",
-      "community": 0
+      "_origin": "ast"
     },
     {
       "id": "backend_app_routers_auth_login",
@@ -744,6 +743,122 @@
       "file_type": "rationale",
       "source_file": "backend/app/routers/dashboard.py",
       "source_location": "L17",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_member_workflows",
+      "label": "member_workflows.py",
+      "file_type": "code",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_member_workflows_actor",
+      "label": "actor()",
+      "file_type": "code",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L11",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_member_workflows_py_get",
+      "label": "get",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_member_workflows_detail",
+      "label": "detail()",
+      "file_type": "code",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L16",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_member_workflows_py_depends",
+      "label": "Depends",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_member_workflows_py_asyncsession",
+      "label": "AsyncSession",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_member_workflows_py_post",
+      "label": "post",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_member_workflows_close",
+      "label": "close()",
+      "file_type": "code",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L21",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_member_workflows_outreach",
+      "label": "outreach()",
+      "file_type": "code",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L27",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_member_workflows_rationale_1",
+      "label": "Expose protected member-detail care workflows.",
+      "file_type": "rationale",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_member_workflows_rationale_12",
+      "label": "Decode the required bearer token.",
+      "file_type": "rationale",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L12",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_member_workflows_rationale_17",
+      "label": "Return a masked, audited member detail.",
+      "file_type": "rationale",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L17",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_member_workflows_rationale_22",
+      "label": "Close a care gap with an attributable reason.",
+      "file_type": "rationale",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L22",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_routers_member_workflows_rationale_28",
+      "label": "Log an outreach attempt.",
+      "file_type": "rationale",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L28",
       "_origin": "ast"
     },
     {
@@ -973,6 +1088,70 @@
       "label": "Define dashboard response contracts.",
       "file_type": "rationale",
       "source_file": "backend/app/schemas/dashboard.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_schemas_member_detail",
+      "label": "member_detail.py",
+      "file_type": "code",
+      "source_file": "backend/app/schemas/member_detail.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_schemas_member_detail_gapcloserequest",
+      "label": "GapCloseRequest",
+      "file_type": "code",
+      "source_file": "backend/app/schemas/member_detail.py",
+      "source_location": "L3",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_schemas_member_detail_py_basemodel",
+      "label": "BaseModel",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_schemas_member_detail_outreachrequest",
+      "label": "OutreachRequest",
+      "file_type": "code",
+      "source_file": "backend/app/schemas/member_detail.py",
+      "source_location": "L4",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_schemas_member_detail_goalupdaterequest",
+      "label": "GoalUpdateRequest",
+      "file_type": "code",
+      "source_file": "backend/app/schemas/member_detail.py",
+      "source_location": "L5",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_schemas_member_detail_memberdetail",
+      "label": "MemberDetail",
+      "file_type": "code",
+      "source_file": "backend/app/schemas/member_detail.py",
+      "source_location": "L6",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_schemas_member_detail_rationale_1",
+      "label": "Define member-detail workflow contracts.",
+      "file_type": "rationale",
+      "source_file": "backend/app/schemas/member_detail.py",
       "source_location": "L1",
       "_origin": "ast"
     },
@@ -1213,6 +1392,115 @@
       "_origin": "ast"
     },
     {
+      "id": "backend_app_services_member_workflow_service",
+      "label": "member_workflow_service.py",
+      "file_type": "code",
+      "source_file": "backend/app/services/member_workflow_service.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_member_workflow_service_mask_ssn",
+      "label": "mask_ssn()",
+      "file_type": "code",
+      "source_file": "backend/app/services/member_workflow_service.py",
+      "source_location": "L7",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_member_workflow_service_mask_mbi",
+      "label": "mask_mbi()",
+      "file_type": "code",
+      "source_file": "backend/app/services/member_workflow_service.py",
+      "source_location": "L10",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_member_workflow_service_member_detail",
+      "label": "member_detail()",
+      "file_type": "code",
+      "source_file": "backend/app/services/member_workflow_service.py",
+      "source_location": "L13",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_member_workflow_service_py_asyncsession",
+      "label": "AsyncSession",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_member_workflow_service_close_gap",
+      "label": "close_gap()",
+      "file_type": "code",
+      "source_file": "backend/app/services/member_workflow_service.py",
+      "source_location": "L20",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_member_workflow_service_log_outreach",
+      "label": "log_outreach()",
+      "file_type": "code",
+      "source_file": "backend/app/services/member_workflow_service.py",
+      "source_location": "L26",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_member_workflow_service_rationale_1",
+      "label": "Implement protected member-detail and care-workflow behavior.",
+      "file_type": "rationale",
+      "source_file": "backend/app/services/member_workflow_service.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_member_workflow_service_rationale_8",
+      "label": "Return an SSN with only its final four digits visible.",
+      "file_type": "rationale",
+      "source_file": "backend/app/services/member_workflow_service.py",
+      "source_location": "L8",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_member_workflow_service_rationale_11",
+      "label": "Return an MBI with only its final four digits visible.",
+      "file_type": "rationale",
+      "source_file": "backend/app/services/member_workflow_service.py",
+      "source_location": "L11",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_member_workflow_service_rationale_14",
+      "label": "Read a permitted member while recording a non-sensitive audit event.",
+      "file_type": "rationale",
+      "source_file": "backend/app/services/member_workflow_service.py",
+      "source_location": "L14",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_member_workflow_service_rationale_21",
+      "label": "Close an open care gap for an authorized non-auditor.",
+      "file_type": "rationale",
+      "source_file": "backend/app/services/member_workflow_service.py",
+      "source_location": "L21",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_app_services_member_workflow_service_rationale_27",
+      "label": "Persist validated outreach for an authorized staff member.",
+      "file_type": "rationale",
+      "source_file": "backend/app/services/member_workflow_service.py",
+      "source_location": "L27",
+      "_origin": "ast"
+    },
+    {
       "id": "backend_tests_test_auth",
       "label": "test_auth.py",
       "file_type": "code",
@@ -1408,6 +1696,81 @@
       "_origin": "ast"
     },
     {
+      "id": "backend_tests_test_member_workflows",
+      "label": "test_member_workflows.py",
+      "file_type": "code",
+      "source_file": "backend/tests/test_member_workflows.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_member_workflows_sign_in",
+      "label": "sign_in()",
+      "file_type": "code",
+      "source_file": "backend/tests/test_member_workflows.py",
+      "source_location": "L4",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_member_workflows_py_asyncio",
+      "label": "asyncio",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_member_workflows_test_detail_masks_identifiers_audits_and_closes_gap",
+      "label": "test_detail_masks_identifiers_audits_and_closes_gap()",
+      "file_type": "code",
+      "source_file": "backend/tests/test_member_workflows.py",
+      "source_location": "L8",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_member_workflows_test_auditor_cannot_mutate_and_invalid_outreach_is_rejected",
+      "label": "test_auditor_cannot_mutate_and_invalid_outreach_is_rejected()",
+      "file_type": "code",
+      "source_file": "backend/tests/test_member_workflows.py",
+      "source_location": "L18",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_member_workflows_rationale_1",
+      "label": "Verify protected member care workflows.",
+      "file_type": "rationale",
+      "source_file": "backend/tests/test_member_workflows.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_member_workflows_rationale_5",
+      "label": "Return a seeded token.",
+      "file_type": "rationale",
+      "source_file": "backend/tests/test_member_workflows.py",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_member_workflows_rationale_9",
+      "label": "Mask sensitive identifiers, audit reads, and attribute closure.",
+      "file_type": "rationale",
+      "source_file": "backend/tests/test_member_workflows.py",
+      "source_location": "L9",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_test_member_workflows_rationale_19",
+      "label": "Enforce audit-only permissions and constrained outreach vocabulary.",
+      "file_type": "rationale",
+      "source_file": "backend/tests/test_member_workflows.py",
+      "source_location": "L19",
+      "_origin": "ast"
+    },
+    {
       "id": "frontend_e2e_access_spec",
       "label": "access.spec.ts",
       "file_type": "code",
@@ -1421,6 +1784,14 @@
       "label": "dashboard-panel.spec.ts",
       "file_type": "code",
       "source_file": "frontend/e2e/dashboard-panel.spec.ts",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_e2e_member_workflows_spec",
+      "label": "member-workflows.spec.ts",
+      "file_type": "code",
+      "source_file": "frontend/e2e/member-workflows.spec.ts",
       "source_location": "L1",
       "_origin": "ast"
     },
@@ -1835,7 +2206,7 @@
       "label": "App()",
       "file_type": "code",
       "source_file": "frontend/src/App.tsx",
-      "source_location": "L5",
+      "source_location": "L7",
       "_callable": true,
       "_origin": "ast",
       "community": 5
@@ -1890,6 +2261,23 @@
       "community": 5
     },
     {
+      "id": "frontend_src_components_caregapdialog",
+      "label": "CareGapDialog.tsx",
+      "file_type": "code",
+      "source_file": "frontend/src/components/CareGapDialog.tsx",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_components_caregapdialog_caregapdialog",
+      "label": "CareGapDialog()",
+      "file_type": "code",
+      "source_file": "frontend/src/components/CareGapDialog.tsx",
+      "source_location": "L1",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
       "id": "frontend_src_components_membertable",
       "label": "MemberTable.tsx",
       "file_type": "code",
@@ -1903,6 +2291,40 @@
       "file_type": "code",
       "source_file": "frontend/src/components/MemberTable.tsx",
       "source_location": "L2",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_components_outreachdialog",
+      "label": "OutreachDialog.tsx",
+      "file_type": "code",
+      "source_file": "frontend/src/components/OutreachDialog.tsx",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_components_outreachdialog_outreachdialog",
+      "label": "OutreachDialog()",
+      "file_type": "code",
+      "source_file": "frontend/src/components/OutreachDialog.tsx",
+      "source_location": "L1",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_components_themetoggle",
+      "label": "ThemeToggle.tsx",
+      "file_type": "code",
+      "source_file": "frontend/src/components/ThemeToggle.tsx",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_components_themetoggle_themetoggle",
+      "label": "ThemeToggle()",
+      "file_type": "code",
+      "source_file": "frontend/src/components/ThemeToggle.tsx",
+      "source_location": "L1",
       "_callable": true,
       "_origin": "ast"
     },
@@ -1996,6 +2418,41 @@
       "_callable": true,
       "_origin": "ast",
       "community": 5
+    },
+    {
+      "id": "frontend_src_pages_memberdetailpage_test",
+      "label": "MemberDetailPage.test.tsx",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/MemberDetailPage.test.tsx",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_pages_memberdetailpage",
+      "label": "MemberDetailPage.tsx",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/MemberDetailPage.tsx",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_pages_memberdetailpage_detail",
+      "label": "Detail",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/MemberDetailPage.tsx",
+      "source_location": "L2",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_pages_memberdetailpage_memberdetailpage",
+      "label": "MemberDetailPage()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/MemberDetailPage.tsx",
+      "source_location": "L3",
+      "_callable": true,
+      "_origin": "ast"
     },
     {
       "id": "frontend_src_pages_memberpanelpage",
@@ -2777,11 +3234,22 @@
     },
     {
       "source": "backend_app_main",
+      "target": "backend_app_routers_member_workflows",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/main.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_main",
       "target": "backend_app_main_lifespan",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L17",
+      "source_location": "L18",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -2792,7 +3260,7 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L17",
+      "source_location": "L18",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -2802,7 +3270,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L37",
+      "source_location": "L39",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast"
@@ -2813,7 +3281,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L38",
+      "source_location": "L40",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -2828,22 +3296,22 @@
       "_origin": "ast"
     },
     {
-      "source": "backend_app_main_rationale_18",
+      "source": "backend_app_main_rationale_19",
       "target": "backend_app_main_lifespan",
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
-      "source": "backend_app_main_rationale_39",
+      "source": "backend_app_main_rationale_41",
       "target": "backend_app_main_health",
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/main.py",
-      "source_location": "L39",
+      "source_location": "L41",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3114,7 +3582,7 @@
     },
     {
       "source": "backend_app_routers_auth_login",
-      "target": "post",
+      "target": "backend_app_routers_auth_py_post",
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/routers/auth.py",
@@ -3387,6 +3855,371 @@
       "confidence": "EXTRACTED",
       "source_file": "backend/app/routers/dashboard.py",
       "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_member_workflows",
+      "target": "fastapi",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_member_workflows",
+      "target": "backend_app_core_database",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_member_workflows",
+      "target": "backend_app_core_security",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_member_workflows",
+      "target": "backend_app_schemas_member_detail",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_member_workflows",
+      "target": "backend_app_services_member_workflow_service",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_member_workflows",
+      "target": "backend_app_routers_member_workflows_actor",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_member_workflows_detail",
+      "target": "backend_app_routers_member_workflows_py_get",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_member_workflows",
+      "target": "backend_app_routers_member_workflows_detail",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_member_workflows_detail",
+      "target": "backend_app_routers_member_workflows_py_depends",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_member_workflows_detail",
+      "target": "backend_app_routers_member_workflows_actor",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_member_workflows_detail",
+      "target": "backend_app_routers_member_workflows_py_asyncsession",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_member_workflows_detail",
+      "target": "backend_app_routers_member_workflows_py_depends",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_member_workflows_detail",
+      "target": "backend_app_core_database_get_session",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_member_workflows_close",
+      "target": "backend_app_routers_member_workflows_py_post",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_member_workflows",
+      "target": "backend_app_routers_member_workflows_close",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_member_workflows_close",
+      "target": "backend_app_schemas_member_detail_gapcloserequest",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_member_workflows_close",
+      "target": "backend_app_routers_member_workflows_py_depends",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_member_workflows_close",
+      "target": "backend_app_routers_member_workflows_actor",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_member_workflows_close",
+      "target": "backend_app_routers_member_workflows_py_asyncsession",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_member_workflows_close",
+      "target": "backend_app_routers_member_workflows_py_depends",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_member_workflows_close",
+      "target": "backend_app_core_database_get_session",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_member_workflows_outreach",
+      "target": "backend_app_routers_member_workflows_py_post",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_member_workflows",
+      "target": "backend_app_routers_member_workflows_outreach",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_member_workflows_outreach",
+      "target": "backend_app_schemas_member_detail_outreachrequest",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_member_workflows_outreach",
+      "target": "backend_app_routers_member_workflows_py_depends",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_member_workflows_outreach",
+      "target": "backend_app_routers_member_workflows_actor",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_member_workflows_outreach",
+      "target": "backend_app_routers_member_workflows_py_asyncsession",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_member_workflows_outreach",
+      "target": "backend_app_routers_member_workflows_py_depends",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_member_workflows_outreach",
+      "target": "backend_app_core_database_get_session",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_member_workflows_rationale_1",
+      "target": "backend_app_routers_member_workflows",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_member_workflows_rationale_12",
+      "target": "backend_app_routers_member_workflows_actor",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_member_workflows_rationale_17",
+      "target": "backend_app_routers_member_workflows_detail",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_member_workflows_rationale_22",
+      "target": "backend_app_routers_member_workflows_close",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_member_workflows_rationale_28",
+      "target": "backend_app_routers_member_workflows_outreach",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L28",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3728,6 +4561,96 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/schemas/dashboard.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_member_detail",
+      "target": "backend_app_schemas_member_detail_gapcloserequest",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/member_detail.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_member_detail_gapcloserequest",
+      "target": "backend_app_schemas_member_detail_py_basemodel",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/member_detail.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_member_detail",
+      "target": "backend_app_schemas_member_detail_outreachrequest",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/member_detail.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_member_detail_outreachrequest",
+      "target": "backend_app_schemas_member_detail_py_basemodel",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/member_detail.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_member_detail",
+      "target": "backend_app_schemas_member_detail_goalupdaterequest",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/member_detail.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_member_detail_goalupdaterequest",
+      "target": "backend_app_schemas_member_detail_py_basemodel",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/member_detail.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_member_detail",
+      "target": "backend_app_schemas_member_detail_memberdetail",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/member_detail.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_member_detail_memberdetail",
+      "target": "backend_app_schemas_member_detail_py_basemodel",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/member_detail.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_schemas_member_detail_rationale_1",
+      "target": "backend_app_schemas_member_detail",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/schemas/member_detail.py",
       "source_location": "L1",
       "weight": 1.0,
       "_origin": "ast"
@@ -4100,6 +5023,182 @@
       "_origin": "ast"
     },
     {
+      "source": "backend_app_services_member_workflow_service",
+      "target": "backend_app_models_entities",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/member_workflow_service.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_member_workflow_service",
+      "target": "backend_app_services_member_workflow_service_mask_ssn",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/member_workflow_service.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_member_workflow_service",
+      "target": "backend_app_services_member_workflow_service_mask_mbi",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/member_workflow_service.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_member_workflow_service",
+      "target": "backend_app_services_member_workflow_service_member_detail",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/member_workflow_service.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_member_workflow_service_member_detail",
+      "target": "backend_app_services_member_workflow_service_py_asyncsession",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/member_workflow_service.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_member_workflow_service",
+      "target": "backend_app_services_member_workflow_service_close_gap",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/member_workflow_service.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_member_workflow_service_close_gap",
+      "target": "backend_app_services_member_workflow_service_py_asyncsession",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/member_workflow_service.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_member_workflow_service",
+      "target": "backend_app_services_member_workflow_service_log_outreach",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/member_workflow_service.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_member_workflow_service_log_outreach",
+      "target": "backend_app_services_member_workflow_service_py_asyncsession",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/member_workflow_service.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_member_workflow_service_member_detail",
+      "target": "backend_app_services_member_workflow_service_mask_ssn",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/member_workflow_service.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_member_workflow_service_member_detail",
+      "target": "backend_app_services_member_workflow_service_mask_mbi",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/member_workflow_service.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_member_workflow_service_rationale_1",
+      "target": "backend_app_services_member_workflow_service",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/member_workflow_service.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_member_workflow_service_rationale_8",
+      "target": "backend_app_services_member_workflow_service_mask_ssn",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/member_workflow_service.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_member_workflow_service_rationale_11",
+      "target": "backend_app_services_member_workflow_service_mask_mbi",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/member_workflow_service.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_member_workflow_service_rationale_14",
+      "target": "backend_app_services_member_workflow_service_member_detail",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/member_workflow_service.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_member_workflow_service_rationale_21",
+      "target": "backend_app_services_member_workflow_service_close_gap",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/member_workflow_service.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_member_workflow_service_rationale_27",
+      "target": "backend_app_services_member_workflow_service_log_outreach",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/member_workflow_service.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "backend_tests_test_auth_isolate_database",
       "target": "fixture",
       "relation": "references",
@@ -4343,6 +5442,120 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "backend/tests/test_dashboard_panel.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_member_workflows",
+      "target": "backend_tests_test_member_workflows_sign_in",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_member_workflows.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_member_workflows_test_detail_masks_identifiers_audits_and_closes_gap",
+      "target": "backend_tests_test_member_workflows_py_asyncio",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_member_workflows.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_member_workflows",
+      "target": "backend_tests_test_member_workflows_test_detail_masks_identifiers_audits_and_closes_gap",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_member_workflows.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_member_workflows_test_auditor_cannot_mutate_and_invalid_outreach_is_rejected",
+      "target": "backend_tests_test_member_workflows_py_asyncio",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_member_workflows.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_member_workflows",
+      "target": "backend_tests_test_member_workflows_test_auditor_cannot_mutate_and_invalid_outreach_is_rejected",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_member_workflows.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_member_workflows_test_detail_masks_identifiers_audits_and_closes_gap",
+      "target": "backend_tests_test_member_workflows_sign_in",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_member_workflows.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_member_workflows_test_auditor_cannot_mutate_and_invalid_outreach_is_rejected",
+      "target": "backend_tests_test_member_workflows_sign_in",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_member_workflows.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_member_workflows_rationale_1",
+      "target": "backend_tests_test_member_workflows",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_member_workflows.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_member_workflows_rationale_5",
+      "target": "backend_tests_test_member_workflows_sign_in",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_member_workflows.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_member_workflows_rationale_9",
+      "target": "backend_tests_test_member_workflows_test_detail_masks_identifiers_audits_and_closes_gap",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_member_workflows.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_test_member_workflows_rationale_19",
+      "target": "backend_tests_test_member_workflows_test_auditor_cannot_mutate_and_invalid_outreach_is_rejected",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_member_workflows.py",
       "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast"
@@ -4904,11 +6117,44 @@
     },
     {
       "source": "frontend_src_app",
+      "target": "frontend_src_pages_memberdetailpage",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app",
+      "target": "frontend_src_components_themetoggle",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app",
+      "target": "frontend_src_components_themetoggle_themetoggle",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app",
       "target": "frontend_src_app_app",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/App.tsx",
-      "source_location": "L5",
+      "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -4975,6 +6221,16 @@
       "_origin": "ast"
     },
     {
+      "source": "frontend_src_components_caregapdialog",
+      "target": "frontend_src_components_caregapdialog_caregapdialog",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/CareGapDialog.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "frontend_src_components_membertable",
       "target": "frontend_src_types",
       "relation": "imports_from",
@@ -5003,6 +6259,26 @@
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/components/MemberTable.tsx",
       "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_components_outreachdialog",
+      "target": "frontend_src_components_outreachdialog_outreachdialog",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/OutreachDialog.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_components_themetoggle",
+      "target": "frontend_src_components_themetoggle_themetoggle",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/ThemeToggle.tsx",
+      "source_location": "L1",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -5219,6 +6495,81 @@
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/pages/LoginPage.tsx",
       "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_pages_memberdetailpage_test",
+      "target": "frontend_src_pages_memberdetailpage",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/MemberDetailPage.test.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_pages_memberdetailpage",
+      "target": "frontend_src_components_caregapdialog",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/MemberDetailPage.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_pages_memberdetailpage",
+      "target": "frontend_src_components_caregapdialog_caregapdialog",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/MemberDetailPage.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_pages_memberdetailpage",
+      "target": "frontend_src_components_outreachdialog",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/MemberDetailPage.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_pages_memberdetailpage",
+      "target": "frontend_src_components_outreachdialog_outreachdialog",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/MemberDetailPage.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_pages_memberdetailpage",
+      "target": "frontend_src_pages_memberdetailpage_detail",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/MemberDetailPage.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_pages_memberdetailpage",
+      "target": "frontend_src_pages_memberdetailpage_memberdetailpage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/MemberDetailPage.tsx",
+      "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -5636,6 +6987,17 @@
       "_origin": "ast"
     },
     {
+      "source": "frontend_src_app",
+      "target": "frontend_src_pages_memberdetailpage_memberdetailpage",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "frontend_src_main",
       "target": "frontend_src_app_app",
       "relation": "imports",
@@ -5665,6 +7027,17 @@
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/pages/LoginPage.test.tsx",
       "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_pages_memberdetailpage_test",
+      "target": "frontend_src_pages_memberdetailpage_memberdetailpage",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/MemberDetailPage.test.tsx",
+      "source_location": "L1",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -5845,6 +7218,94 @@
       "_origin": "ast"
     },
     {
+      "source": "backend_app_routers_member_workflows",
+      "target": "backend_app_core_database_get_session",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_member_workflows",
+      "target": "backend_app_core_security_decode_access_token",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_member_workflows",
+      "target": "backend_app_schemas_member_detail_gapcloserequest",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_member_workflows",
+      "target": "backend_app_schemas_member_detail_memberdetail",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_member_workflows",
+      "target": "backend_app_schemas_member_detail_outreachrequest",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_member_workflows",
+      "target": "backend_app_services_member_workflow_service_close_gap",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_member_workflows",
+      "target": "backend_app_services_member_workflow_service_log_outreach",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_member_workflows",
+      "target": "backend_app_services_member_workflow_service_member_detail",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "backend_app_routers_members",
       "target": "backend_app_core_database_get_session",
       "relation": "imports",
@@ -6032,6 +7493,50 @@
       "_origin": "ast"
     },
     {
+      "source": "backend_app_services_member_workflow_service",
+      "target": "backend_app_models_entities_auditlog",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/member_workflow_service.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_member_workflow_service",
+      "target": "backend_app_models_entities_caregap",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/member_workflow_service.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_member_workflow_service",
+      "target": "backend_app_models_entities_member",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/member_workflow_service.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_member_workflow_service",
+      "target": "backend_app_models_entities_outreach",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/member_workflow_service.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "backend_tests_test_auth",
       "target": "backend_app_models_entities_coordinator",
       "relation": "imports",
@@ -6104,6 +7609,17 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/app/routers/dashboard.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_member_workflows_actor",
+      "target": "backend_app_core_security_decode_access_token",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/member_workflows.py",
       "source_location": "L13",
       "weight": 1.0,
       "_origin": "ast"
@@ -6193,6 +7709,28 @@
       "confidence": "EXTRACTED",
       "source_file": "backend/app/services/member_service.py",
       "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_member_workflow_service_member_detail",
+      "target": "backend_app_models_entities_auditlog",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/member_workflow_service.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_services_member_workflow_service_log_outreach",
+      "target": "backend_app_models_entities_outreach",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/member_workflow_service.py",
+      "source_location": "L30",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -6294,7 +7832,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/app/main.py",
-      "source_location": "L23",
+      "source_location": "L24",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -6306,7 +7844,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "backend/app/main.py",
-      "source_location": "L26",
+      "source_location": "L27",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -6335,6 +7873,42 @@
       "_origin": "ast"
     },
     {
+      "source": "backend_app_routers_member_workflows_detail",
+      "target": "backend_app_services_member_workflow_service_member_detail",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_member_workflows_close",
+      "target": "backend_app_services_member_workflow_service_close_gap",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_app_routers_member_workflows_outreach",
+      "target": "backend_app_services_member_workflow_service_log_outreach",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/app/routers/member_workflows.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "backend_app_routers_members_get_members",
       "target": "backend_app_services_member_service_list_members",
       "relation": "calls",
@@ -6354,7 +7928,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/src/App.tsx",
-      "source_location": "L5",
+      "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -6417,22 +7991,99 @@
       "weight": 1.0,
       "_origin": "ast",
       "confidence_score": 1.0,
-      "_src": "backend_app_routers_auth_login",
+      "_src": "backend_app_core_database_get_session",
+      "_tgt": "backend_app_routers_auth_login"
+    },
+    {
+      "source": "backend_app_core_database_get_session",
+      "target": "backend_app_routers_dashboard_get_dashboard",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/dashboard.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_routers_dashboard_get_dashboard",
       "_tgt": "backend_app_core_database_get_session"
     },
     {
-      "source": "post",
-      "target": "backend_app_routers_auth_login",
+      "source": "backend_app_core_database_get_session",
+      "target": "backend_app_routers_members_get_members",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/members.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_routers_members_get_members",
+      "_tgt": "backend_app_core_database_get_session"
+    },
+    {
+      "source": "backend_app_main_py_get",
+      "target": "backend_app_main_health",
       "relation": "references",
       "confidence": "EXTRACTED",
-      "source_file": "backend/app/routers/auth.py",
+      "source_file": "backend/app/main.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_app_main_health",
+      "_tgt": "backend_app_main_py_get"
+    },
+    {
+      "source": "backend_app_routers_dashboard_actor",
+      "target": "backend_app_routers_dashboard_get_dashboard",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/dashboard.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_routers_dashboard_get_dashboard",
+      "_tgt": "backend_app_routers_dashboard_actor"
+    },
+    {
+      "source": "backend_app_routers_dashboard_py_get",
+      "target": "backend_app_routers_dashboard_get_dashboard",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/dashboard.py",
       "source_location": "L15",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
-      "confidence_score": 1.0,
-      "_src": "backend_app_routers_auth_login",
-      "_tgt": "post"
+      "_src": "backend_app_routers_dashboard_get_dashboard",
+      "_tgt": "backend_app_routers_dashboard_py_get"
+    },
+    {
+      "source": "backend_app_routers_members_actor",
+      "target": "backend_app_routers_members_get_members",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/members.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_routers_members_get_members",
+      "_tgt": "backend_app_routers_members_actor"
+    },
+    {
+      "source": "backend_app_routers_members_py_get",
+      "target": "backend_app_routers_members_get_members",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/routers/members.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_app_routers_members_get_members",
+      "_tgt": "backend_app_routers_members_py_get"
     },
     {
       "source": "backend_app_schemas_auth_userresponse",
@@ -6445,8 +8096,21 @@
       "source_location": "L35",
       "weight": 1.0,
       "_origin": "ast",
-      "_src": "backend_app_services_auth_service_authenticate",
-      "_tgt": "backend_app_schemas_auth_userresponse"
+      "_src": "backend_app_schemas_auth_userresponse",
+      "_tgt": "backend_app_services_auth_service_authenticate"
+    },
+    {
+      "source": "backend_app_schemas_dashboard_dashboardresponse",
+      "target": "backend_app_services_dashboard_service_dashboard",
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/app/services/dashboard_service.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "_src": "backend_app_services_dashboard_service_dashboard",
+      "_tgt": "backend_app_schemas_dashboard_dashboardresponse"
     },
     {
       "source": "fixture",
@@ -6458,16 +8122,80 @@
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
-      "confidence_score": 1.0,
       "_src": "backend_tests_test_auth_isolate_database",
       "_tgt": "fixture"
+    },
+    {
+      "source": "backend_tests_test_auth_py_asyncio",
+      "target": "backend_tests_test_auth_test_login_rejects_invalid_credentials",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_auth.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_tests_test_auth_test_login_rejects_invalid_credentials",
+      "_tgt": "backend_tests_test_auth_py_asyncio"
+    },
+    {
+      "source": "backend_tests_test_auth_py_asyncio",
+      "target": "backend_tests_test_auth_test_seeded_coordinator_can_login",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_auth.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_tests_test_auth_test_seeded_coordinator_can_login",
+      "_tgt": "backend_tests_test_auth_py_asyncio"
+    },
+    {
+      "source": "backend_tests_test_auth_py_asyncio",
+      "target": "backend_tests_test_auth_test_startup_seeding_is_idempotent",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_auth.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_tests_test_auth_test_startup_seeding_is_idempotent",
+      "_tgt": "backend_tests_test_auth_py_asyncio"
+    },
+    {
+      "source": "backend_tests_test_dashboard_panel_py_asyncio",
+      "target": "backend_tests_test_dashboard_panel_test_coordinator_dashboard_and_panel_are_scoped",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_dashboard_panel.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_tests_test_dashboard_panel_test_coordinator_dashboard_and_panel_are_scoped",
+      "_tgt": "backend_tests_test_dashboard_panel_py_asyncio"
+    },
+    {
+      "source": "backend_tests_test_dashboard_panel_py_asyncio",
+      "target": "backend_tests_test_dashboard_panel_test_panel_rejects_missing_token",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/test_dashboard_panel.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "_src": "backend_tests_test_dashboard_panel_test_panel_rejects_missing_token",
+      "_tgt": "backend_tests_test_dashboard_panel_py_asyncio"
     }
   ],
   "metadata": {
-    "built_at": "2026-09-15T09:54:01.564013+00:00",
+    "built_at": "2026-09-15T09:55:40.847771+00:00",
     "version": "graph_update-v1",
     "codebase_root": "C:\\artifacts-v2\\T0132PcJVCRTV000415092609414470\\developer",
     "force": true,
-    "files_scanned": 42
+    "files_scanned": 52
   }
 }
