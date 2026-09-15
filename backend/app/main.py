@@ -9,6 +9,8 @@ from app.core.config import settings
 from app.core.database import SessionLocal, create_tables
 from app.core.seed import seed_database
 from app.routers.auth import router as auth_router
+from app.routers.dashboard import router as dashboard_router
+from app.routers.members import router as members_router
 
 
 @asynccontextmanager
@@ -28,6 +30,8 @@ async def lifespan(_: FastAPI):
 app = FastAPI(title="Meridian Care Console API", version="1.0.0", lifespan=lifespan)
 app.add_middleware(CORSMiddleware, allow_origins=settings.cors_origin_list, allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
 app.include_router(auth_router)
+app.include_router(dashboard_router)
+app.include_router(members_router)
 
 
 @app.get("/api/health", tags=["health"], summary="Return process liveness")

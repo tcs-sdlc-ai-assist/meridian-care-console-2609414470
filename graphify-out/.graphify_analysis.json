@@ -1,0 +1,401 @@
+{
+  "communities": {
+    "0": [
+      "backend_app_core_config",
+      "backend_app_core_config_rationale_1",
+      "backend_app_core_database",
+      "backend_app_core_database_create_tables",
+      "backend_app_core_database_ensure_database_parent",
+      "backend_app_core_database_get_session",
+      "backend_app_core_database_py_asyncsession",
+      "backend_app_core_database_rationale_1",
+      "backend_app_core_database_rationale_13",
+      "backend_app_core_database_rationale_30",
+      "backend_app_core_database_rationale_40",
+      "backend_app_main",
+      "backend_app_main_health",
+      "backend_app_main_lifespan",
+      "backend_app_main_rationale_1",
+      "backend_app_main_rationale_16",
+      "backend_app_main_rationale_35",
+      "backend_app_routers_auth",
+      "backend_app_routers_auth_login",
+      "backend_app_routers_auth_py_asyncsession",
+      "backend_app_routers_auth_py_loginresponse",
+      "backend_app_routers_auth_rationale_1",
+      "backend_app_routers_auth_rationale_17",
+      "depends",
+      "fastapi",
+      "get",
+      "post"
+    ],
+    "1": [
+      "backend_app_core_security",
+      "backend_app_core_security_create_access_token",
+      "backend_app_core_security_decode_access_token",
+      "backend_app_core_security_rationale_1",
+      "backend_app_core_security_rationale_24",
+      "backend_app_core_security_rationale_37",
+      "backend_app_core_security_rationale_51",
+      "backend_app_core_security_verify_password",
+      "backend_app_schemas_auth",
+      "backend_app_schemas_auth_loginrequest",
+      "backend_app_schemas_auth_loginresponse",
+      "backend_app_schemas_auth_rationale_1",
+      "backend_app_schemas_auth_rationale_14",
+      "backend_app_schemas_auth_rationale_25",
+      "backend_app_schemas_auth_rationale_7",
+      "backend_app_schemas_auth_userresponse",
+      "backend_app_services_auth_service",
+      "backend_app_services_auth_service_authenticate",
+      "backend_app_services_auth_service_invalidcredentialserror",
+      "backend_app_services_auth_service_py_asyncsession",
+      "backend_app_services_auth_service_py_loginresponse",
+      "backend_app_services_auth_service_rationale_1",
+      "backend_app_services_auth_service_rationale_12",
+      "backend_app_services_auth_service_rationale_16",
+      "basemodel",
+      "exception"
+    ],
+    "2": [
+      "backend_app_core_database_base",
+      "backend_app_core_database_rationale_26",
+      "backend_app_core_security_hash_password",
+      "backend_app_core_security_rationale_12",
+      "backend_app_core_seed",
+      "backend_app_core_seed_py_asyncsession",
+      "backend_app_core_seed_rationale_1",
+      "backend_app_core_seed_rationale_13",
+      "backend_app_core_seed_seed_database",
+      "backend_app_models_entities",
+      "backend_app_models_entities_auditlog",
+      "backend_app_models_entities_caregap",
+      "backend_app_models_entities_careplangoal",
+      "backend_app_models_entities_coordinator",
+      "backend_app_models_entities_member",
+      "backend_app_models_entities_outreach",
+      "backend_app_models_entities_rationale_1",
+      "backend_app_models_entities_rationale_13",
+      "backend_app_models_entities_rationale_26",
+      "backend_app_models_entities_rationale_48",
+      "backend_app_models_entities_rationale_65",
+      "backend_app_models_entities_rationale_80",
+      "backend_app_models_entities_rationale_91",
+      "declarativebase"
+    ],
+    "3": [
+      "frontend_tsconfig",
+      "frontend_tsconfig_compileroptions",
+      "frontend_tsconfig_compileroptions_allowjs",
+      "frontend_tsconfig_compileroptions_allowsyntheticdefaultimports",
+      "frontend_tsconfig_compileroptions_esmoduleinterop",
+      "frontend_tsconfig_compileroptions_forceconsistentcasinginfilenames",
+      "frontend_tsconfig_compileroptions_isolatedmodules",
+      "frontend_tsconfig_compileroptions_jsx",
+      "frontend_tsconfig_compileroptions_lib",
+      "frontend_tsconfig_compileroptions_module",
+      "frontend_tsconfig_compileroptions_moduleresolution",
+      "frontend_tsconfig_compileroptions_noemit",
+      "frontend_tsconfig_compileroptions_nounusedlocals",
+      "frontend_tsconfig_compileroptions_nounusedparameters",
+      "frontend_tsconfig_compileroptions_resolvejsonmodule",
+      "frontend_tsconfig_compileroptions_skiplibcheck",
+      "frontend_tsconfig_compileroptions_strict",
+      "frontend_tsconfig_compileroptions_target",
+      "frontend_tsconfig_compileroptions_usedefineforclassfields",
+      "frontend_tsconfig_include",
+      "ref_dom",
+      "ref_dom_iterable",
+      "ref_es2020",
+      "ref_src"
+    ],
+    "4": [
+      "frontend_package",
+      "frontend_package_dependencies",
+      "frontend_package_dependencies_react",
+      "frontend_package_dependencies_react_dom",
+      "frontend_package_dependencies_react_router_dom",
+      "frontend_package_dependencies_typescript",
+      "frontend_package_dependencies_vite",
+      "frontend_package_dependencies_vitejs_plugin_react",
+      "frontend_package_name",
+      "frontend_package_private",
+      "frontend_package_scripts",
+      "frontend_package_scripts_build",
+      "frontend_package_scripts_dev",
+      "frontend_package_scripts_test",
+      "frontend_package_type",
+      "frontend_package_version",
+      "react",
+      "react_dom",
+      "react_router_dom",
+      "typescript",
+      "vite",
+      "vitejs_plugin_react"
+    ],
+    "5": [
+      "frontend_src_api_client",
+      "frontend_src_api_client_login",
+      "frontend_src_app",
+      "frontend_src_app_app",
+      "frontend_src_auth_authprovider",
+      "frontend_src_auth_authprovider_authcontext",
+      "frontend_src_auth_authprovider_authcontextvalue",
+      "frontend_src_auth_authprovider_authprovider",
+      "frontend_src_auth_authprovider_useauth",
+      "frontend_src_components_ui",
+      "frontend_src_components_ui_button",
+      "frontend_src_components_ui_card",
+      "frontend_src_main",
+      "frontend_src_pages_loginpage",
+      "frontend_src_pages_loginpage_loginpage",
+      "frontend_src_pages_loginpage_test",
+      "frontend_src_types",
+      "frontend_src_types_loginresponse",
+      "frontend_src_types_role",
+      "frontend_src_types_user"
+    ],
+    "6": [
+      "frontend_package_devdependencies",
+      "frontend_package_devdependencies_jsdom",
+      "frontend_package_devdependencies_playwright_test",
+      "frontend_package_devdependencies_testing_library_jest_dom",
+      "frontend_package_devdependencies_testing_library_react",
+      "frontend_package_devdependencies_testing_library_user_event",
+      "frontend_package_devdependencies_types_react",
+      "frontend_package_devdependencies_types_react_dom",
+      "frontend_package_devdependencies_vitest",
+      "jsdom",
+      "playwright_test",
+      "testing_library_jest_dom",
+      "testing_library_react",
+      "testing_library_user_event",
+      "types_react",
+      "types_react_dom",
+      "vitest"
+    ],
+    "7": [
+      "asyncio",
+      "backend_tests_test_auth",
+      "backend_tests_test_auth_isolate_database",
+      "backend_tests_test_auth_rationale_1",
+      "backend_tests_test_auth_rationale_13",
+      "backend_tests_test_auth_rationale_20",
+      "backend_tests_test_auth_rationale_35",
+      "backend_tests_test_auth_rationale_47",
+      "backend_tests_test_auth_test_login_rejects_invalid_credentials",
+      "backend_tests_test_auth_test_seeded_coordinator_can_login",
+      "backend_tests_test_auth_test_startup_seeding_is_idempotent",
+      "fixture",
+      "monkeypatch"
+    ],
+    "8": [
+      "backend_app_core_config_rationale_20",
+      "backend_app_core_config_rationale_7",
+      "backend_app_core_config_settings",
+      "backend_app_core_config_settings_cors_origin_list",
+      "basesettings"
+    ],
+    "9": [
+      "plan_fastapi",
+      "plan_fullstack_architecture",
+      "plan_jwt",
+      "plan_react_vite_typescript",
+      "plan_sqlite"
+    ],
+    "10": [
+      "engine_memory_progress_summary_access_demo_persistence",
+      "plan_access_and_demo_persistence",
+      "todos_access_demo_persistence"
+    ],
+    "11": [
+      "plan_design_minimalist",
+      "plan_meridian_care_console",
+      "plan_meridian_care_console_prd"
+    ],
+    "12": [
+      "backend_app_core_init",
+      "backend_app_core_init_rationale_1"
+    ],
+    "13": [
+      "backend_app_init",
+      "backend_app_init_rationale_1"
+    ],
+    "14": [
+      "backend_app_models_init",
+      "backend_app_models_init_rationale_1"
+    ],
+    "15": [
+      "backend_app_routers_init",
+      "backend_app_routers_init_rationale_1"
+    ],
+    "16": [
+      "backend_app_schemas_init",
+      "backend_app_schemas_init_rationale_1"
+    ],
+    "17": [
+      "backend_app_services_init",
+      "backend_app_services_init_rationale_1"
+    ],
+    "18": [
+      "plan_delivery_and_cross_feature_quality",
+      "todos_delivery_quality"
+    ],
+    "19": [
+      "plan_member_record_care_workflows",
+      "todos_member_care_workflows"
+    ],
+    "20": [
+      "plan_operational_dashboard_and_panel",
+      "todos_dashboard_member_panel"
+    ],
+    "21": [
+      "frontend_e2e_access_spec"
+    ],
+    "22": [
+      "frontend_vite_config"
+    ],
+    "23": [
+      "frontend_vitest_config"
+    ]
+  },
+  "cohesion": {
+    "0": 0.09686609686609686,
+    "1": 0.11692307692307692,
+    "2": 0.13043478260869565,
+    "3": 0.08333333333333333,
+    "4": 0.09090909090909091,
+    "5": 0.2,
+    "6": 0.11764705882352941,
+    "7": 0.1794871794871795,
+    "8": 0.4,
+    "9": 0.4,
+    "10": 0.6666666666666666,
+    "11": 0.6666666666666666,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0
+  },
+  "gods": [
+    {
+      "id": "frontend_tsconfig_compileroptions",
+      "label": "compilerOptions",
+      "degree": 18
+    },
+    {
+      "id": "backend_app_services_auth_service_authenticate",
+      "label": "authenticate()",
+      "degree": 11
+    },
+    {
+      "id": "backend_app_core_database_base",
+      "label": "Base",
+      "degree": 10
+    },
+    {
+      "id": "backend_app_core_seed_seed_database",
+      "label": "seed_database()",
+      "degree": 9
+    },
+    {
+      "id": "backend_app_routers_auth_login",
+      "label": "login()",
+      "degree": 9
+    },
+    {
+      "id": "backend_app_models_entities_coordinator",
+      "label": "Coordinator",
+      "degree": 8
+    },
+    {
+      "id": "backend_app_services_auth_service_invalidcredentialserror",
+      "label": "InvalidCredentialsError",
+      "degree": 8
+    },
+    {
+      "id": "backend_app_schemas_auth_loginresponse",
+      "label": "LoginResponse",
+      "degree": 7
+    },
+    {
+      "id": "backend_app_schemas_auth_userresponse",
+      "label": "UserResponse",
+      "degree": 6
+    },
+    {
+      "id": "backend_app_core_database_get_session",
+      "label": "get_session()",
+      "degree": 5
+    }
+  ],
+  "surprises": [
+    {
+      "source": "access-demo-persistence",
+      "target": "Access and Demo Persistence",
+      "source_files": [
+        "todos.yaml",
+        "PLAN.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "semantically_similar_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; semantically similar concepts with no structural link"
+    },
+    {
+      "source": "dashboard-member-panel",
+      "target": "Operational Dashboard and Panel",
+      "source_files": [
+        "todos.yaml",
+        "PLAN.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "semantically_similar_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; semantically similar concepts with no structural link"
+    },
+    {
+      "source": "member-care-workflows",
+      "target": "Member Record Care Workflows",
+      "source_files": [
+        "todos.yaml",
+        "PLAN.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "semantically_similar_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; semantically similar concepts with no structural link"
+    },
+    {
+      "source": "delivery-quality",
+      "target": "Delivery and Cross-Feature Quality",
+      "source_files": [
+        "todos.yaml",
+        "PLAN.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "semantically_similar_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; semantically similar concepts with no structural link"
+    },
+    {
+      "source": "InvalidCredentialsError",
+      "target": "Coordinator",
+      "source_files": [
+        "backend/app/services/auth_service.py",
+        "backend/app/models/entities.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "uses",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}
