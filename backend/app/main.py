@@ -11,6 +11,7 @@ from app.core.seed import seed_database
 from app.routers.auth import router as auth_router
 from app.routers.dashboard import router as dashboard_router
 from app.routers.members import router as members_router
+from app.routers.member_workflows import router as member_workflows_router
 
 
 @asynccontextmanager
@@ -32,6 +33,7 @@ app.add_middleware(CORSMiddleware, allow_origins=settings.cors_origin_list, allo
 app.include_router(auth_router)
 app.include_router(dashboard_router)
 app.include_router(members_router)
+app.include_router(member_workflows_router)
 
 
 @app.get("/api/health", tags=["health"], summary="Return process liveness")

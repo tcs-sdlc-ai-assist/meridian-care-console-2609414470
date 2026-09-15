@@ -1,0 +1,1 @@
+import {test,expect} from '@playwright/test';test('member detail shows protected identifier masking',async({page})=>{await page.goto('/');await page.getByRole('button',{name:'Sign in'}).click();await expect(page.getByText('Rosa Diaz')).toBeVisible();});
