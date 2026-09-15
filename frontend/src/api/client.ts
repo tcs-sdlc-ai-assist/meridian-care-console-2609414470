@@ -1,4 +1,5 @@
 import type { DashboardData, LoginResponse, MemberList } from '../types';
+export type { DashboardData } from '../types';
 
 const baseUrl = import.meta.env.VITE_API_BASE_URL ?? '/api';
 

@@ -1,19 +1,7 @@
 """Test seeded authentication behavior through the FastAPI HTTP surface."""
 
-from pathlib import Path
-
 import pytest
 from httpx import ASGITransport, AsyncClient
-
-TEST_DB = Path("/tmp/meridian-test-auth.db")
-
-
-@pytest.fixture(autouse=True)
-def isolate_database(monkeypatch: pytest.MonkeyPatch) -> None:
-    """Point settings to a fresh file-backed SQLite database per test run."""
-    TEST_DB.unlink(missing_ok=True)
-    monkeypatch.setenv("DATABASE_URL", "sqlite+aiosqlite:////tmp/meridian-test-auth.db")
-
 
 @pytest.mark.asyncio
 async def test_seeded_coordinator_can_login() -> None:
