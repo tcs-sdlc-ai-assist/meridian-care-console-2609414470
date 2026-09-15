@@ -1,0 +1,2 @@
+import { test, expect } from '@playwright/test';
+test('seeded coordinator can authenticate through the real API', async ({ page }) => { const errors: string[] = []; page.on('pageerror', error => errors.push(error.message)); await page.goto('/'); await page.getByRole('button', { name: 'Sign in' }).click(); await expect(page.getByText('Welcome, Avery Chen')).toBeVisible(); expect(errors).toEqual([]); });
